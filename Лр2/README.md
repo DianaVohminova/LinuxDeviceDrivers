@@ -43,11 +43,11 @@
    ```bash
    make
 2. **Создание виртуального интерфейса для анализа**
-    ```  sudo ip link add dummy0 type dummy
+    ``` sudo ip link add dummy0 type dummy
     ``` sudo ip link set dummy0 up
 
 3. **Загрузка модуля**
-    ```  sudo insmod span_driver.ko src_if=wlp5s0 dst_if=dummy0
+    ``` sudo insmod span_driver.ko src_if=wlp5s0 dst_if=dummy0
 
 4. **Проверка работы**
     # В одном терминале — прослушиваем зеркало
